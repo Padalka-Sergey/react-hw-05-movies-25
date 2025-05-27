@@ -9,14 +9,13 @@ export const Cast = () => {
   useEffect(() => {
     getMovieCast(id)
       .then(res => {
-        console.log(res);
+        // console.log(res);
         setDataCast(res);
       })
       .catch(err => console.error(err));
   }, [id]);
 
   if (dataCast) {
-    console.log(dataCast);
     return (
       <div>
         <ul className="ul-cast">

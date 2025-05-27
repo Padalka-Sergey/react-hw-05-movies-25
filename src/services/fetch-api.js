@@ -26,6 +26,13 @@ export const getMovieCast = movieId => {
     `https://api.themoviedb.org/3/movie/${movieId}/credits?language=en-US`,
     options
   ).then(res => res.json());
+};
+
+export const getMovieReviews = movieId => {
+  return fetch(
+    `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US&page=1`,
+    options
+  ).then(res => res.json());
   // .then(res => console.log(res))
   // .catch(err => console.error(err));
 };
