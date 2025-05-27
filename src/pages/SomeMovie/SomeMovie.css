@@ -1,4 +1,36 @@
 .img {
-  width: 200px;
-  height: auto;
+  height: 300px;
+  /* width: 200px; */
+}
+
+.box-movie {
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
+}
+
+.title-movie {
+  font-size: 22px;
+}
+
+.subtitle-movie {
+  font-size: 18px;
+}
+.subtitle-h3 {
+  font-size: 16px;
+}
+
+.info-list {
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.box-info {
+  padding: 0 10px;
+  box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
 }

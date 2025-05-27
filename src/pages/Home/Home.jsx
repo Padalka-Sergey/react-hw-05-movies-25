@@ -1,4 +1,3 @@
-// import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { Loader } from 'components/Loader/Loader';
 import { fetchFaforiteMovies } from 'services/fetch-api';

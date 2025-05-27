@@ -1,19 +1,6 @@
-/* .app-contaner {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  color: #010101;
-} */
-
 .header-box {
   box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
 }
-
-/* .header {
-
-} */
 
 .nav {
   display: flex;
