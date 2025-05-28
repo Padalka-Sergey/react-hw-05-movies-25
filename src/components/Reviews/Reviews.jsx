@@ -9,24 +9,31 @@ export const Reviews = () => {
   useEffect(() => {
     getMovieReviews(id)
       .then(res => {
-        console.log(res);
         setDataReviews(res);
       })
       .catch(err => console.error(err));
   }, [id]);
 
+  if (dataReviews?.results.length === 0) {
+    return (
+      <p className="p-reviews"> We don't have any reviews for this movie.</p>
+    );
+  }
+
   if (dataReviews) {
     return (
-      <ul>
-        {dataReviews.results.map(res => {
-          return (
-            <li key={res.id}>
-              <h3>Author: {res.author}</h3>
-              <p>{res.content}</p>
-            </li>
-          );
-        })}
-      </ul>
+      <section>
+        <ul className="ul-reviews">
+          {dataReviews.results.map(res => {
+            return (
+              <li key={res.id}>
+                <h3 className="h3-reviews">Author: {res.author}</h3>
+                <p>{res.content}</p>
+              </li>
+            );
+          })}
+        </ul>
+      </section>
     );
   }
 };
