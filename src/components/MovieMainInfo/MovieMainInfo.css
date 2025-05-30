@@ -1,11 +1,10 @@
 .img {
   height: 300px;
-  /* width: 200px; */
 }
 
 .box-movie {
   display: flex;
-  padding: 10px;
+  padding: 0 10px 10px;
   gap: 20px;
   box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
 }

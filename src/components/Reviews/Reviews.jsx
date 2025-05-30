@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { getMovieReviews } from 'services/fetch-api';
 import './Reviews.css';
 
-export const Reviews = () => {
+const Reviews = () => {
   const { id } = useParams();
   const [dataReviews, setDataReviews] = useState(null);
   useEffect(() => {
@@ -37,3 +37,5 @@ export const Reviews = () => {
     );
   }
 };
+
+export default Reviews;

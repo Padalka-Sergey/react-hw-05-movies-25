@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
-import { Loader } from 'components/Loader/Loader';
+import { useLocation } from 'react-router-dom';
 import { fetchFaforiteMovies } from 'services/fetch-api';
 import { LinkMovie } from 'components/LinkMovie/LinkMovie';
 import './Home.css';
 
 const Home = () => {
   const [favoriteMovies, setFavoriteMovies] = useState(null);
+  const location = useLocation();
+
   useEffect(() => {
     fetchFaforiteMovies()
       .then(res => {
@@ -16,14 +18,19 @@ const Home = () => {
 
   return (
     <main className="main-box">
-      <h1 className="title">Trending today</h1>
-      {!favoriteMovies && <Loader />}
       {favoriteMovies && (
-        <ul>
-          {favoriteMovies.map(favoriteMovie => (
-            <LinkMovie key={favoriteMovie.id} favoriteMovie={favoriteMovie} />
-          ))}
-        </ul>
+        <>
+          <h1 className="title">Trending today</h1>
+          <ul>
+            {favoriteMovies.map(movie => (
+              <LinkMovie
+                key={movie.id}
+                movie={movie}
+                stateFromLoc={{ from: location }}
+              />
+            ))}
+          </ul>
+        </>
       )}
     </main>
   );

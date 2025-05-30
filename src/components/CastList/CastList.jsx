@@ -4,7 +4,7 @@ import { getMovieCast } from 'services/fetch-api';
 import { CastItem } from 'components/CastItem/CastItem';
 import './CastList.css';
 
-export const CastList = () => {
+const CastList = () => {
   const { id } = useParams();
   const [dataCast, setDataCast] = useState(null);
   useEffect(() => {
@@ -27,3 +27,5 @@ export const CastList = () => {
     );
   }
 };
+
+export default CastList;

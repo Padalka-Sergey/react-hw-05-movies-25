@@ -33,6 +33,11 @@ export const getMovieReviews = movieId => {
     `https://api.themoviedb.org/3/movie/${movieId}/reviews?language=en-US&page=1`,
     options
   ).then(res => res.json());
-  // .then(res => console.log(res))
-  // .catch(err => console.error(err));
+};
+
+export const getSearhMovies = searchMovie => {
+  return fetch(
+    `https://api.themoviedb.org/3/search/movie?query=${searchMovie}&include_adult=false&language=en-US&page=1`,
+    options
+  ).then(res => res.json());
 };
