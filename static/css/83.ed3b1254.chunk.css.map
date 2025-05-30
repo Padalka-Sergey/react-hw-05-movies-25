@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/83.ed3b1254.chunk.css","mappings":"AAAA,MACE,YACF,CAEA,aACE,YAAa,CACb,iBACF,CAEA,YACE,iBACF","sources":["pages/Movies/Movies.css"],"sourcesContent":[".form {\n  padding: 15px;\n}\n\n.movies-list {\n  margin-top: 0;\n  padding-left: 50px;\n}\n\n.error-text {\n  padding-left: 20px;\n}\n"],"names":[],"sourceRoot":""}
