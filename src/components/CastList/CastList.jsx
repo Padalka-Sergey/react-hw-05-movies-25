@@ -7,6 +7,7 @@ import './CastList.css';
 const CastList = () => {
   const { id } = useParams();
   const [dataCast, setDataCast] = useState(null);
+
   useEffect(() => {
     getMovieCast(id)
       .then(res => {

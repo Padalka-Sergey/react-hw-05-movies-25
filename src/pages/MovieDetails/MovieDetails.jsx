@@ -1,7 +1,7 @@
 import { useEffect, useState, Suspense } from 'react';
 import { useParams, Outlet, useLocation } from 'react-router-dom';
 import { BackLink } from 'components/BackLink/BackLink';
-import { Loader } from 'components/Loader/Loader';
+// import { Loader } from 'components/Loader/Loader';
 import { AdditionalInfo } from 'components/AdditionalInfo/AdditionalInfo';
 import { MovieMainInfo } from 'components/MovieMainInfo/MovieMainInfo';
 import { getMovieById } from 'services/fetch-api';
@@ -20,9 +20,9 @@ const MovieDetails = () => {
       .catch(err => console.error(err));
   }, [id]);
 
-  if (!dataMovie) {
-    return <Loader />;
-  }
+  // if (!dataMovie) {
+  //   return <Loader />;
+  // }
 
   if (dataMovie) {
     return (

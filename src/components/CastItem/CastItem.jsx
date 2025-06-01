@@ -1,6 +1,6 @@
 import './CastItem.css';
 
-export const CastItem = ({ person }) => {
+export const CastItem = ({ person, stateFromLoc }) => {
   return (
     <li key={person.id} className="li-cast">
       {person.profile_path ? (

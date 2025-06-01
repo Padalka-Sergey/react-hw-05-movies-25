@@ -4,11 +4,12 @@ export const MovieMainInfo = ({ dataMovie }) => {
   return (
     <div className="box-movie">
       <img
+        style={{ width: '200px', height: '300px' }}
         className="img"
         src={`https://image.tmdb.org/t/p/w500${dataMovie.poster_path}`}
         alt={dataMovie.title}
       />
-      {/* <div className="box-about"> */}
+
       <div>
         <h1 className="title-movie">{dataMovie.title}</h1>
         {dataMovie.vote_average ? (
