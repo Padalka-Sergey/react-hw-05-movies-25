@@ -1,9 +1,9 @@
 import { RotatingLines } from 'react-loader-spinner';
-import './Loader.css';
+import css from './Loader.module.css';
 
 export const Loader = () => {
   return (
-    <div className="loader-box">
+    <div className={css.loaderBox}>
       <RotatingLines
         visible={true}
         height="50"

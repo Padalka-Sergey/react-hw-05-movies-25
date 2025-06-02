@@ -1,17 +1,17 @@
-.box-movie {
+.boxMovie {
   display: flex;
   padding: 0 10px 10px;
   gap: 20px;
   box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
 }
 
-.title-movie {
+.titleMovie {
   font-size: 22px;
 }
 
-.subtitle-movie {
+.subtitleMovie {
   font-size: 18px;
 }
-.subtitle-h3 {
+.subtitleH3 {
   font-size: 16px;
 }

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { fetchFaforiteMovies } from 'services/fetch-api';
 import { LinkMovie } from 'components/LinkMovie/LinkMovie';
-import './Home.css';
+import css from './Home.module.css';
 
 const Home = () => {
   const [favoriteMovies, setFavoriteMovies] = useState(null);
@@ -17,10 +17,10 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="main-box">
+    <main className={css.mainBox}>
       {favoriteMovies && (
         <>
-          <h1 className="title">Trending today</h1>
+          <h1 className={css.title}>Trending today</h1>
           <ul>
             {favoriteMovies.map(movie => (
               <LinkMovie

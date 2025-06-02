@@ -7,15 +7,17 @@
   padding: 10px;
 }
 
-.nav-link {
+.navLink {
   padding: 8px;
   text-decoration: none;
 }
 
-.nav-link:hover {
+.navLink:hover {
   text-decoration: underline;
 }
 
-.nav-link.active {
+.active {
   color: rgb(214, 0, 0);
+  padding: 8px;
+  text-decoration: none;
 }

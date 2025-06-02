@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { getMovieCast } from 'services/fetch-api';
 import { CastItem } from 'components/CastItem/CastItem';
-import './CastList.css';
+import css from './CastList.module.css';
 
 const CastList = () => {
   const { id } = useParams();
@@ -19,7 +19,7 @@ const CastList = () => {
   if (dataCast) {
     return (
       <section>
-        <ul className="ul-cast">
+        <ul className={css.ulCast}>
           {dataCast.cast.map(person => {
             return <CastItem key={person.id} person={person} />;
           })}

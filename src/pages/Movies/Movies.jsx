@@ -3,7 +3,7 @@ import { useSearchParams, useLocation } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
 import { LinkSearchMovie } from 'components/LinkSearchMovie/LinkSearchMovie';
 import { getSearhMovies } from 'services/fetch-api';
-import './Movies.css';
+import css from './Movies.module.css';
 
 const Movies = () => {
   const [searchMovie, setSearchMovie] = useState(null);
@@ -33,19 +33,19 @@ const Movies = () => {
 
   return (
     <main>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className={css.form} onSubmit={handleSubmit}>
         <input type="text" name="input" size={30} />
         <button type="submit">Search</button>
       </form>
       {!searchMovie && query === '' && (
-        <p className="error-text">Enter a valid request!</p>
+        <p className={css.errorText}>Enter a valid request!</p>
       )}
       {searchMovie?.length === 0 && (
-        <p className="error-text">Movies with this name not found!</p>
+        <p className={css.errorText}>Movies with this name not found!</p>
       )}
       {!searchMovie && query && <Loader />}
       {searchMovie && (
-        <ul className="movies-list">
+        <ul className={css.moviesList}>
           {searchMovie.map(movie => (
             <LinkSearchMovie
               key={movie.id}

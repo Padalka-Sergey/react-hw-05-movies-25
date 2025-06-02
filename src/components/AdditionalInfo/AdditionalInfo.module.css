@@ -1,13 +1,13 @@
-.info-list {
+.infoList {
   margin-bottom: 0;
   padding-bottom: 15px;
 }
 
-li {
+.itemLi {
   padding: 5px 0;
 }
 
-.box-info {
+.boxInfo {
   padding: 0 10px;
   box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.24);
 }
