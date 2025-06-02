@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/168.ddbb2a45.chunk.css","mappings":"AAAA,0BACE,iBACF,CAEA,0BACE,cACF,CAEA,yBACE,iBACF","sources":["components/Reviews/Reviews.module.css"],"sourcesContent":[".ulReviews {\n  padding-left: 50px;\n}\n\n.h3Reviews {\n  font-size: 16px;\n}\n\n.pReviews {\n  padding-left: 10px;\n}\n"],"names":[],"sourceRoot":""}
